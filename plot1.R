@@ -1,5 +1,5 @@
 library(dplyr)
-h_consump <- read.csv("household_power_consumption.txt", header=TRUE, sep=";")
+h_consump <- read.csv("household_power_consumption.txt", header=TRUE, sep=";", na.strings="?")
 #head(h_consump)
 
 feb_h_consump <- filter(h_consump, Date %in% c("1/2/2007", "2/2/2007"))

@@ -1,6 +1,6 @@
 library(dplyr)
 
-h_consump <- read.csv("household_power_consumption.txt", header=TRUE, sep=";")
+h_consump <- read.csv("household_power_consumption.txt", header=TRUE, sep=";", na.strings="?")
 #head(h_consump)
 
 #filter feb 1st and 2nd data
